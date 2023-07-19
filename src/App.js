@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import Homemap from './Components/Map/Homemap';
 
 function App() {
   return (
     <div className="App">
-      <div>hello</div>
+      <div>
+        <Homemap/>
+      </div>
     </div>
   );
 }
