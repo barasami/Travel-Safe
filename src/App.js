@@ -1,11 +1,12 @@
 import './App.css';
-import Homemap from './Components/Map/Homemap';
+import Home from './Components/Home/Home';
+
 
 function App() {
   return (
     <div className="App">
       <div>
-        <Homemap/>
+        <Home/>
       </div>
     </div>
   );
