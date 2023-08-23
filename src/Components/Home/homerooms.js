@@ -1,7 +1,8 @@
 import axios from 'axios';
 
+const Url='https://airbnb13.p.rapidapi.com/search-location'
+
 const options = {
-  url: 'https://airbnb13.p.rapidapi.com/search-location',
   params: {
     location: 'Paris',
     checkin: '2023-09-16',
@@ -22,9 +23,9 @@ const options = {
 export const availableRooms=async()=>{
 
     try {
-        const response = await axios.get(options);
-        return response;
+      const response = await axios.get(options,Url);
+      return response;
     } catch (error) {
-        console.error(error);
+      console.log(error);
     }
 }
